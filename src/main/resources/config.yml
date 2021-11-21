@@ -1,0 +1,19 @@
+# Should the plugin log to console the domain name / ip address that people join with.
+logHostnames: true
+
+hostnames:
+  # The Id this can really be anything but it's best to set it to something relevant.
+  test:
+    # The Sub-Domain or Ip Address that the user must join from for the commands to be triggered.
+    subdomain: mc.tomsoz.xyz
+    # If the action should only be executed the first time the player has ever joined the server.
+    firstJoin: true
+    # The messages that are sent to the user on join.
+    messages:
+      - "Hello"
+    # The commands to execute from the server when the user joins.
+    commands:
+      - "say Hello."
+    # The commands that the user should execute when they join.
+    userCommands:
+      - "daily"

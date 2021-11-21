@@ -1,0 +1,10 @@
+name: CDomains
+version: '${project.version}'
+main: xyz.tomsoz.cdomains.CDomains
+prefix: CDomains
+authors: [ Tomsoz ]
+description: A plugin that allows for referral domains
+website: https://www.tomsoz.xyz/
+softdepend: [ PlaceholderAPI ]
+commands:
+  cdomains:
