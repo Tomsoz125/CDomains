@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import xyz.tomsoz.cdomains.Commands.MainCommand;
 import xyz.tomsoz.cdomains.Events.PlayerLogin;
 import xyz.tomsoz.cdomains.Misc.ConfigManager;
+import xyz.tomsoz.cdomains.Misc.Metrics;
 import xyz.tomsoz.cdomains.Misc.PAPI;
 import xyz.tomsoz.cdomains.Misc.Utils;
 
@@ -26,6 +27,7 @@ public final class CDomains extends JavaPlugin {
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
             new PAPI(this).register();
         }
+        new Metrics(this, 13385);
         PluginDescriptionFile data = this.getDescription();
         Bukkit.getConsoleSender().sendMessage(Utils.chat("&a"+data.getFullName()+" v"+data.getVersion()+" by "+data.getAuthors().get(0)+" has successfully enabled."));
     }
